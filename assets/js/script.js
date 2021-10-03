@@ -4,6 +4,7 @@ var searchButtonEl = $('#search-button');
 var citySearchEl = $('#city-search');
 var previousSearchEl = $('#previous-searches');
 var fivedayContainer = $('#fivedayContainer');
+var fivedayTextEl = $('#five-day-text');
 
 var citiesSearched = JSON.parse(window.localStorage.getItem("myCities")) || [];
 
@@ -75,7 +76,7 @@ function getFiveDay(cityName){
             var properDate = formatDate(theDate);
 
             var newCardContainerEl = $('<div>');
-            newCardContainerEl.addClass('col s2');
+            newCardContainerEl.addClass('col s12 m5 l2');
             var newCardEl = $('<div>');
             newCardEl.addClass('card blue-grey darken-2');
             var newCardContentEl = $('<div>');
@@ -138,6 +139,7 @@ function handleSearch(){
 
     cityName = cityName.split(' ').join('+');
 
+    fivedayTextEl.removeClass('hide');
     contentEl.empty();
     fivedayContainer.empty();
     getWeather(cityName);
@@ -147,6 +149,7 @@ function handleSearch(){
 
 function prevCitySearch(event){
 
+    fivedayTextEl.removeClass('hide');
     contentEl.empty();
     fivedayContainer.empty();
     getWeather($(this).text());

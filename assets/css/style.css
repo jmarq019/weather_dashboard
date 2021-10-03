@@ -34,3 +34,21 @@ nav{
 .card-panel img{
     margin: 0, auto;
 }
+
+@media screen and (max-width: 475px){
+    nav .brand-logo{
+        font-size: 1.5rem;
+        margin-top: 0.35em;
+    }
+
+    #weatherCard h1, #weatherCard h4{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 475px){
+    nav .brand-logo{
+        font-size: large;
+    }
+}
