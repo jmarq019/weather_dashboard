@@ -133,9 +133,11 @@ function handleSearch(){
     var cityName = citySearchEl.val();
     var newCity = cityName;
 
+    if(!citiesSearched.includes(cityName)){
     createPrevCitySearch(newCity);
     citiesSearched.push(newCity);
     window.localStorage.setItem("myCities", JSON.stringify(citiesSearched));
+    }
 
     cityName = cityName.split(' ').join('+');
 
