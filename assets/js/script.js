@@ -1,6 +1,5 @@
 
 var contentEl = $('#weatherCard');
-var searchButtonEl = $('#search-button');
 var citySearchEl = $('#city-search');
 var previousSearchEl = $('#previous-searches');
 var fivedayContainer = $('#fivedayContainer');
@@ -129,7 +128,8 @@ function createPrevCitySearch(newCity){
 
 }
 
-function handleSearch(){
+function handleSearch(event){
+    event.preventDefault();
 
     var cityName = citySearchEl.val();
     var newCity = cityName;
@@ -171,7 +171,6 @@ function showPrevSearches(){
 
 }
 
-searchButtonEl.on('click', handleSearch);
 weatherSearchEl.on('submit', handleSearch);
 
 previousSearchEl.on('click', '#prevCity', prevCitySearch);
