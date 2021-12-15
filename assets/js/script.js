@@ -5,6 +5,7 @@ var citySearchEl = $('#city-search');
 var previousSearchEl = $('#previous-searches');
 var fivedayContainer = $('#fivedayContainer');
 var fivedayTextEl = $('#five-day-text');
+var weatherSearchEl = $('#weather-search');
 
 var citiesSearched = JSON.parse(window.localStorage.getItem("myCities")) || [];
 
@@ -171,6 +172,7 @@ function showPrevSearches(){
 }
 
 searchButtonEl.on('click', handleSearch);
+weatherSearchEl.on('submit', handleSearch);
 
 previousSearchEl.on('click', '#prevCity', prevCitySearch);
 
