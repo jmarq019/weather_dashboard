@@ -17,6 +17,10 @@ nav{
     font-weight: bold;
 }
 
+.btn-large:hover{
+    box-shadow: 6px 6px 6px 2px rgb(199, 234, 247);
+}
+
 .collection{
     width: 90%;
     border-color: transparent;
