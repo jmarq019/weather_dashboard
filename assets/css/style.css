@@ -1,0 +1,58 @@
+nav{
+    background: linear-gradient(to left, navy, skyblue);
+}
+
+.row .col.s6{
+    width: 90% !important;
+}
+
+#city_search{
+    border: 1px solid black;
+    height: 3.5em;
+    width: 100%;    
+}
+
+.btn-large{
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn-large:hover{
+    box-shadow: 0px 0px 8px 3px rgb(98, 210, 251);
+}
+
+.collection{
+    width: 90%;
+    border-color: transparent;
+}
+
+.collection li{
+    margin: 1em;
+}
+
+.collection li button{
+    border-radius: 5px;
+    font-weight: bold;
+} 
+
+.card-panel img{
+    margin: 0, auto;
+}
+
+@media screen and (max-width: 475px){
+    nav .brand-logo{
+        font-size: 1.5rem;
+        margin-top: 0.35em;
+    }
+
+    #weatherCard h1, #weatherCard h4{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 475px){
+    nav .brand-logo{
+        font-size: large;
+    }
+}
