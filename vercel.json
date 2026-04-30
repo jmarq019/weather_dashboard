@@ -1,0 +1,4 @@
+{
+  "buildCommand": "echo \"window.OPENWEATHER_KEY='$OPENWEATHER_KEY';\" > config.js",
+  "outputDirectory": "."
+}

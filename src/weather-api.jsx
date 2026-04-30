@@ -2,7 +2,7 @@
 // Wires to OpenWeather API. Falls back to mock data if the API key is
 // missing/invalid or the network call fails — so the dashboard always renders.
 
-const OPENWEATHER_KEY = import.meta.env.VITE_API_KEY;
+const OPENWEATHER_KEY = window.OPENWEATHER_KEY;
 
 // ── API ──────────────────────────────────────────────────────────────────
 async function fetchCurrent(city) {
